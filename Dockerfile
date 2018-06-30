@@ -15,7 +15,7 @@ RUN rm -rf /usr/local/lsws/conf/httpd_config.conf /usr/local/lsws/lsphp72/etc/ph
 COPY ./httpd_config.conf /usr/local/lsws/conf/
 COPY ./php.ini /usr/local/lsws/lsphp72/etc/php/7.2/litespeed/
 
-VOLUME ["/usr/local/lsws/conf", "/usr/local/lsws/Example"]
+VOLUME ["/usr/local/lsws/conf", "/usr/local/lsws/Example/html"]
 
 EXPOSE 80
 EXPOSE 7080
