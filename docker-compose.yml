@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  web:
+    restart: always
+    ports:
+      - '8088:80'
+      - '7080:7080'
+    build: .
+    volumes:
+      - ${PWD}/html:/usr/local/lsws/Example/html
